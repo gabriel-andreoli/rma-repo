@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMAProject", "RMAProject.csproj", "{835DF827-9F2B-480D-8A46-6137F639F69D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{835DF827-9F2B-480D-8A46-6137F639F69D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{835DF827-9F2B-480D-8A46-6137F639F69D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{835DF827-9F2B-480D-8A46-6137F639F69D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{835DF827-9F2B-480D-8A46-6137F639F69D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDFFED45-E36A-4A4C-8D89-1E9B060635D3}
+	EndGlobalSection
+EndGlobal
