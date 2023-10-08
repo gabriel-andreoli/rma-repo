@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using RMAProject.Domain.SeedWork;
 using RMAProject.Infrastructure;
 using RMAProject.Infrastructure.Repositories.Implementations;
 using RMAProject.Infrastructure.Repositories.Interfaces;
@@ -18,7 +19,18 @@ var connectionString = builder.Configuration.GetConnectionString("RMACon");
 builder.Services.AddDbContext<RmaDbContext>(op => op.UseNpgsql(connectionString));
 
 //Register DPI
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+builder.Services.AddScoped<ICompanyService, CompanyService>();
+builder.Services.AddScoped<ICompanyRepository, CompanyRepository>();
+
+
+builder.Services.AddScoped<ISecurityService, SecurityService>();
+
+
 
 var app = builder.Build();
 

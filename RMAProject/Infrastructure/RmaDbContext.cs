@@ -14,6 +14,8 @@ namespace RMAProject.Infrastructure
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             new CompanyMapping().Configure(modelBuilder.Entity<Company>());
+            new UserMapping().Configure(modelBuilder.Entity<User>());
+            new AddressMapping().Configure(modelBuilder.Entity<Address>());
         }
     }
 }

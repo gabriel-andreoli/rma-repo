@@ -1,6 +1,6 @@
 ﻿namespace RMAProject.Domain.SeedWork
 {
-    public interface IUnityOfWork
+    public interface IUnitOfWork
     {
         void Commit();
     }

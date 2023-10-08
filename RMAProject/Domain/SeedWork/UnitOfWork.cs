@@ -2,7 +2,7 @@
 
 namespace RMAProject.Domain.SeedWork
 {
-    public class UnitOfWork : IUnityOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private readonly RmaDbContext _context;
         public UnitOfWork(RmaDbContext context) 

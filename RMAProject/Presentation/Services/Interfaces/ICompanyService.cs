@@ -2,8 +2,8 @@
 
 namespace RMAProject.Presentation.Services.Interfaces
 {
-    public interface IUserService
+    public interface ICompanyService
     {
-        Task RegisterUser(UserRegisterCommand command);
+        Task RegisterCompany(CompanyRegisterCommand command);
     }
 }
