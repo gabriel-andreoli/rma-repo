@@ -10,6 +10,8 @@ namespace RMAProject.Domain.Entities
         public string Neighbour { get; set; }
         public string Street { get; set; }
         public string PostalCode { get; set; }
+        public string NumberAddress { get; set; }
+        public string Complement { get; set; }
         public Address() { }
     }
 }
