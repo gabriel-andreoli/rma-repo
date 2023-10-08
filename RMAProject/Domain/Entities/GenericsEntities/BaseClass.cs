@@ -1,6 +1,6 @@
 ﻿namespace RMAProject.Domain.Entities.GenericsEntities
 {
-    public class BaseClass
+    public abstract class BaseClass
     {
         public Guid Id { get; set; }
         public bool Deleted { get; set; }
@@ -20,5 +20,11 @@
         }
 
         public void UpdateMe() => UpdatedAt = DateTime.UtcNow;
+
+        public void Register()
+        {
+            Id = Guid.NewGuid();
+            CreatedAt = DateTime.UtcNow;
+        }
     }
 }

@@ -7,8 +7,9 @@ namespace RMAProject.Domain.Entities
     {
         public string Name { get; set; }
         public string Email { get; set; }
-        public int BornDate { get; set; }
-        public EUserGender UserGender { get; set; }
+        public int? BornDate { get; set; }
+        public string HashedPassword { get; private set; }
+        public EUserGender? UserGender { get; set; }
         public Company Company { get; set; }
         public Guid CompanyId { get; set; }
         public User() { }

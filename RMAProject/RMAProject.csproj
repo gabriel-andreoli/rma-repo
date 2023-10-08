@@ -19,7 +19,6 @@
   <ItemGroup>
     <Folder Include="Domain\DTOs\" />
     <Folder Include="Domain\Extension\" />
-    <Folder Include="Domain\SeedWork\" />
     <Folder Include="Infrastructure\Migrations\" />
     <Folder Include="Presentation\Controllers\" />
   </ItemGroup>

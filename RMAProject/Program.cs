@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using RMAProject.Infrastructure;
+using RMAProject.Infrastructure.Repositories.Implementations;
+using RMAProject.Infrastructure.Repositories.Interfaces;
+using RMAProject.Presentation.Services.Implementations;
+using RMAProject.Presentation.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +16,9 @@ builder.Services.AddSwaggerGen();
 
 var connectionString = builder.Configuration.GetConnectionString("RMACon");
 builder.Services.AddDbContext<RmaDbContext>(op => op.UseNpgsql(connectionString));
+
+//Register DPI
+builder.Services.AddScoped<IUserService, UserService>();
 
 var app = builder.Build();
 

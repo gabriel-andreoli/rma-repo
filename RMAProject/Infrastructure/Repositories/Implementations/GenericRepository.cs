@@ -6,7 +6,7 @@ namespace RMAProject.Infrastructure.Repositories.Implementations
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : BaseClass
     {
-        public readonly RmaDbContext _context;
+        private readonly RmaDbContext _context;
         public GenericRepository(RmaDbContext context) 
         {
             _context = context;
