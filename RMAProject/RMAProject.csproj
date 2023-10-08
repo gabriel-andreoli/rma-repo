@@ -21,8 +21,6 @@
     <Folder Include="Domain\Extension\" />
     <Folder Include="Domain\SeedWork\" />
     <Folder Include="Infrastructure\Migrations\" />
-    <Folder Include="Infrastructure\Repositories\Interfaces\" />
-    <Folder Include="Infrastructure\Repositories\Implementations\" />
     <Folder Include="Presentation\Controllers\" />
   </ItemGroup>
 
